@@ -1,0 +1,57 @@
+.tic-tac-toe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  background-color: #ecf0f1;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #2c3e50;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.square:hover {
+  background-color: #d5e6f0;
+}
+
+.btn {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 25px;
+  background-color: #3498db;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
