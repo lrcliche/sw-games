@@ -1,0 +1,29 @@
+.jumping-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.game-canvas {
+  border: 2px solid #3498db;
+  background-color: #ecf0f1;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+.game-over-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
